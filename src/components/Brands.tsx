@@ -14,7 +14,7 @@ const BRANDS = [
 ] as const;
 
 export function Brands() {
-  return (
+  return ( 
     <section className="relative bg-neutral-50 py-20 md:py-24 border-y border-ink-900/8">
       <div className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <div className="text-center max-w-2xl mx-auto mb-12">
