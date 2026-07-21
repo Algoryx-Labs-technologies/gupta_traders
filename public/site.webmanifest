@@ -1,0 +1,19 @@
+{
+  "name": "Gupta Traders — Electrical & Infrastructure Contractor",
+  "short_name": "Gupta Traders",
+  "description": "Govt-approved electrical & infrastructure contractor in Ahmedabad, India. HT/LT solutions, lighting, pumps and turnkey supply for industrial, commercial, government and railway projects.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/assets/Gupta Traders.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

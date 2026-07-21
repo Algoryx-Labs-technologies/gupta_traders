@@ -1,0 +1,8 @@
+# robots.txt for Gupta Traders
+# https://www.guptatraders.co.in
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.guptatraders.co.in/sitemap.xml
