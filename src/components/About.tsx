@@ -31,6 +31,7 @@ const LEADERS = [
   {
     name: 'Vijay Gupta',
     role: 'Founder & Visionary Leader, Gupta Traders',
+    image: '/assets/Vijay Gupta.jpeg',
     paragraphs: [
       'Vijay Gupta is the Founder and Visionary Leader of Gupta Traders, a leading provider of electrical, industrial, and infrastructure solutions. With a Bachelor of Commerce (B.Com.) and a strong entrepreneurial vision, he has successfully transformed a family-owned business into a dynamic, growth-oriented enterprise recognized for its quality, reliability, and customer-centric approach.',
       'Under his leadership, Gupta Traders has evolved from a traditional trading business into a trusted partner for large-scale infrastructure and railway projects across India. By consistently delivering excellence and fostering long-term relationships with government agencies, public sector organizations, industrial clients, and infrastructure developers, Vijay has established the company as a dependable name in the industry.',
@@ -42,6 +43,7 @@ const LEADERS = [
   {
     name: 'Harsh Gupta',
     role: 'Managing Director',
+    image: '/assets/Harsh Gupta.jpeg',
     paragraphs: [
       'Harsh Gupta is the current Managing Director of Gupta Traders, leading the company\'s strategic growth and operations with a strong focus on innovation, operational excellence, and sustainable infrastructure development. With a degree in Electrical Engineering and extensive experience in the railway infrastructure sector, he brings a unique combination of technical expertise, project leadership, and business acumen.',
       'Having been an integral part of Gupta Traders for over six years, Harsh has progressed through key leadership roles, beginning his journey as a Site Engineer before advancing to Project Manager, Chief Project Manager, and ultimately Managing Director. This hands-on experience across engineering, project execution, and business operations has equipped him with a comprehensive understanding of the industry and the ability to lead complex, high-value infrastructure projects.',
@@ -165,17 +167,22 @@ export function About() {
             {LEADERS.map((leader, index) => (
               <Reveal key={leader.name} delay={120 + index * 80}>
                 <article className="card-surface rounded-2xl p-6 md:p-8 h-full">
-                  <h3 className="font-display text-xl md:text-2xl font-semibold text-ink-900 mb-2">
-                    About{' '}
-                    <span className="text-brand-600">{leader.name}</span>
-                  </h3>
-                  {'role' in leader && leader.role ? (
-                    <p className="text-sm font-medium text-brand-600 mb-5">
-                      {leader.role}
-                    </p>
-                  ) : (
-                    <div className="mb-3" />
-                  )}
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-5 mb-6">
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="h-28 w-28 sm:h-32 sm:w-32 shrink-0 rounded-xl object-cover object-top border border-ink-900/8"
+                    />
+                    <div>
+                      <h3 className="font-display text-xl md:text-2xl font-semibold text-ink-900 mb-2">
+                        About{' '}
+                        <span className="text-brand-600">{leader.name}</span>
+                      </h3>
+                      <p className="text-sm font-medium text-brand-600">
+                        {leader.role}
+                      </p>
+                    </div>
+                  </div>
                   <div className="space-y-4 text-ink-900/70 text-base leading-relaxed">
                     {leader.paragraphs.map((paragraph, pIndex) => (
                       <p key={pIndex}>{paragraph}</p>

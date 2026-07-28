@@ -37,8 +37,8 @@ export function WhyChooseUs() {
           <Reveal>
             <span className="section-eyebrow">Why Choose Us</span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl font-semibold tracking-tight text-ink-900">
-              Why businesses
-              <span className="text-brand-600"> trust Gupta Traders</span>
+              Built on Quality,{" "}
+              <span className="text-brand-600">Driven by Trust</span>
             </h2>
           </Reveal>
         </div>
